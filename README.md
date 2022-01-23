@@ -1,6 +1,6 @@
 # 🍔 McGill McHacks 2022 | FoodGuesser
 
-<p align="center"><img src="#" alt="Website demo" height="382px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/67345874/150663165-a3309dff-372d-42f9-8f11-7c8ea0facd37.gif" alt="Website demo" height="382px"></p>
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/67345874/150662458-a79a52c0-9649-4d80-b58c-5f43df3d4ce4.png" alt="Logo" width="100" height="100" style="object-fit:cover">
