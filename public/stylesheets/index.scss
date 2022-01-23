@@ -1,0 +1,173 @@
+/* SCSS for McHacks January 21-23, 2022 */
+/* Title: FoodGuesser 2022 */
+/* Written by: Dominic Ma, Ronald Luo */
+/* GitHub: https://github.com/6okujins, https://github.com/ronald-luo/ */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+$font0: "Poppins";
+$font1: "Lora";
+
+$color6: #ffffff;
+$color5: #228cfb;
+$color4: #1f6feb;
+$color3: #5d5d5d;
+$color2: #414141;
+$color1: #2b2b2b;
+$color0: #1c1c1c;
+
+$margin0: 10px;
+$margin1: 20px;
+$margin2: 40px;
+$margin3: 16em;
+
+
+/* MEDIA QUERIES */
+
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin desktop {
+    @media(min-width: #{$desktop}) {
+        @content
+    }
+};
+
+h1 {
+    font-family: $font0;
+    font-size: 26px;
+    line-height: 42px;
+    color: $color6;
+
+    a {
+        text-decoration: none;
+        color: $color6;
+    }
+}
+
+/* FONT SYLING */
+
+h2 {
+    font-family: $font0;
+    font-size: 26px;
+    line-height: 42px;
+    color: $color6;
+}
+
+h3 {
+    font-family: $font0;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color6;
+    margin-top: $margin0;
+}
+
+p {
+    font-family: $font1;
+    font-size: 16px;
+    line-height: 26px;
+    color: darken($color6, 20%);
+    margin-top: $margin1;
+}
+
+/* MAIN STYLING */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: $color0;
+}
+
+main {
+    width: 375px;
+    margin: 0 auto 0 auto;
+ 
+}   
+
+
+/* HEADER STYLING */
+
+header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        display: inline-block;
+    }
+
+    nav {
+        display: inline-block;
+        align-self: center;
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color3;
+            margin-left: $margin1;
+
+            &:hover {
+                transition: color 0.2s ease-in-out;
+                color: lighten($color3, 80%);
+            }
+        }
+    }
+}
+
+/* SECTION STYLING */
+
+section {
+    max-width: 100%;
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ANSWER-CARD */
+
+.answer-card {
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    margin: -60px 0 0 -100px;
+    border-radius: 20px;
+    background-color: $color6;
+    color: $color1;
+    border: 1px solid $color1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+        color: $color0;
+        text-align: center;
+    }
+}
+
+/* MAP CANVAS */
+
+#map-canvas {
+    width: 375px;
+    height: 375px;
+    opacity: 100%;
+    margin: 0 auto 0 auto;
+}
