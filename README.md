@@ -14,6 +14,8 @@
     <br />
     <a href="https://foodguesser.ronald-luo.repl.co/">View App</a>
     ·
+    <a href="https://devpost.com/software/foodguesser-7eqom1?ref_content=user-portfolio&ref_feature=in_progress">Devpost</a>
+    ·
     <a href="https://www.npmjs.com/package/google-images">API Source</a>
     ·
     <a href="https://www.linkedin.com/in/ronald-luo-a0ba181a4/">Ron's LinkedIn</a>
